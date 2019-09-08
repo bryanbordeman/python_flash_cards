@@ -9,10 +9,11 @@ class Trail():
         dest = f'this trail goes to {self.dest}.'
 
         if self.len:
-            dest += f'\nThe trail is {self.len}km.'
+            dest += f'\nThe trail is {self.len}km.\n'
         print(dest)
 
 
-mytrail = Trail('Tawoco', 20)
+verst = Trail("Mt. Verstovia", 4)
+print(f'\nDestination: {verst.dest}')
+verst.describe_trail()
 
-mytrail.describe_trail()
