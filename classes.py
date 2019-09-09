@@ -9,11 +9,16 @@ class Trail():
         dest = f'this trail goes to {self.dest}.'
 
         if self.len:
-            dest += f'\nThe trail is {self.len}km.\n'
+            dest += f'\nThe trail is {self.len}km.'
         print(dest)
+
+    def run_trail(self):
+        """Simulate running the trail."""
+        print(f'Running to {self.dest}.\n')
 
 
 verst = Trail("Mt. Verstovia", 4)
 print(f'\nDestination: {verst.dest}')
 verst.describe_trail()
+verst.run_trail()
 
