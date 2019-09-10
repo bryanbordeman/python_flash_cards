@@ -22,3 +22,5 @@ print(f'\nDestination: {verst.dest}')
 verst.describe_trail()
 verst.run_trail()
 
+ms = Trail('Middle Sister', 10)
+
