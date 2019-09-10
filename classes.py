@@ -17,15 +17,21 @@ class Trail():
         print(f'Running to {self.dest}.\n')
 
 
+class BikeTrail(Trail):
+    """Represent a bike trail"""
+
+    def __inti__(self, dest, len=0):
+        super().__init__(dest,len)
+        self.paved = True
+        self.bikes_only = True
+
+
 verst = Trail("Mt. Verstovia", 4)
 print(f'\nDestination: {verst.dest}')
 verst.describe_trail()
 verst.run_trail()
 
 ms = Trail('Middle Sister', 10)
-<<<<<<< HEAD
 ms.describe_trail()
 ms.run_trail()
-=======
->>>>>>> b3563c33f739280d22db815dd9540d75729a5083
 
