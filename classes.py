@@ -23,6 +23,9 @@ verst.describe_trail()
 verst.run_trail()
 
 ms = Trail('Middle Sister', 10)
+<<<<<<< HEAD
 ms.describe_trail()
 ms.run_trail()
+=======
+>>>>>>> b3563c33f739280d22db815dd9540d75729a5083
 
