@@ -27,7 +27,11 @@ class BikeTrail(Trail):
 
     def ride_trail(self):
         """Simulates ridding the trail."""
-        print(f'Riding to {self.dest}. ')
+        # print(f'Riding to {self.dest}. ')
+        if self.bikes_only:
+            print(f"You can't run this trail!")
+        else:
+            super().run_trail()
 
 
 verst = Trail("Mt. Verstovia", 4)
@@ -40,4 +44,4 @@ ms.describe_trail()
 ms.run_trail()
 
 cross_trail = BikeTrail('Harber Moutain', 5)
-cross_trail.ride_trail()
+cross_trail.run_trail()
