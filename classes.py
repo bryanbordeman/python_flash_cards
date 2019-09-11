@@ -25,6 +25,10 @@ class BikeTrail(Trail):
         self.paved = True
         self.bikes_only = True
 
+    def ride_trail(self):
+        """Simulates ridding the trail."""
+        print(f'Riding to {self.dest}. ')
+
 
 verst = Trail("Mt. Verstovia", 4)
 print(f'\nDestination: {verst.dest}')
@@ -35,3 +39,5 @@ ms = Trail('Middle Sister', 10)
 ms.describe_trail()
 ms.run_trail()
 
+cross_trail = BikeTrail('Harber Moutain', 5)
+cross_trail.ride_trail()
