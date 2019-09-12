@@ -44,4 +44,5 @@ ms.describe_trail()
 ms.run_trail()
 
 cross_trail = BikeTrail('Harber Moutain', 5)
+cross_trail.bikes_only=False
 cross_trail.run_trail()
