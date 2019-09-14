@@ -1,16 +1,16 @@
 class Trail():
     """A class to represent trails."""
 
-    def __init__(self, dest, len=0):
+    def __init__(self, dest, lens=0):
         self.dest = dest
-        self.len = len
+        self.lens = lens
 
     def describe_trail(self):
         """Print a description of trail."""
         dest = f'this trail goes to {self.dest}.'
 
-        if self.len:
-            dest += f'\nThe trail is {self.len}km.'
+        if self.lens:
+            dest += f'\nThe trail is {self.lens}km.'
         print(dest)
 
     def run_trail(self):
@@ -21,8 +21,8 @@ class Trail():
 class BikeTrail(Trail):
     """Represent a bike trail"""
 
-    def __inti__(self, dest, len=0):
-        super().__init__(dest, len)
+    def __inti__(self, dest, lens=0):
+        super().__init__(dest, lens)
         self.paved = True
         self.bikes_only = True
 
